@@ -2,8 +2,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: "Poppins", arial;
 
+}
+#mobile_vid{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -2;
 }
 #background-video {
     width: 100vw;
@@ -134,10 +146,29 @@ i{
     width: 400px;
     font-weight: bold;
 }
+
 @media screen and (max-width:480px){
     #centerbox{
         height: 80vh;
-        width: 64vh;
+        width: 95vw;
+    }
+    #mobile_vid{
+        z-index: -1;
+    }
+    #max_min{
+        color: white;
+        font-size: 18px;
+        /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+        font-weight: lighter;
+        font-weight: 500;
+        text-shadow: 0 0 0 5px;
+    }
+    .weather_data{
+        color: white;
+        font-size: 18px;
+        font-weight: lighter;
+        font-weight: 500;
+        text-shadow: 0 0 0 5px;
     }
 }
 @media screen and (max-width:410px){
@@ -145,9 +176,17 @@ i{
         display: flex;
         justify-content: center;
         flex-direction: column;
+        background-color: rgba(241, 236, 236, 0.2);
+        background-color: rgba(0,0,0, 0.4);
+
     }
-    #searchBar{
+    #main{
         display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .div-items{
+        display:flex;
         justify-content: center;
     }
 }
