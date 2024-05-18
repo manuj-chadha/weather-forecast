@@ -134,3 +134,20 @@ i{
     width: 400px;
     font-weight: bold;
 }
+@media screen and (max-width:480px){
+    #centerbox{
+        height: 80vh;
+        width: 64vh;
+    }
+}
+@media screen and (max-width:410px){
+    #centerbox{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #searchBar{
+        display: flex;
+        justify-content: center;
+    }
+}
